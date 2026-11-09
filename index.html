@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хайрт ээждээ ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts" id="hearts"></div>
+
+    <!-- Welcome section -->
+    <section class="hero" id="home">
+
+        <div class="flower">🌷</div>
+
+        <p class="small-title">WITH ALL MY LOVE</p>
+
+        <h1>Хайрт ээждээ</h1>
+
+        <p class="subtitle">
+            Энэ өдөр зөвхөн танд зориулагдсан...
+        </p>
+
+        <button class="main-btn" onclick="openSurprise()">
+            Танд зориулав ❤️
+        </button>
+
+
+
+        <p class="bottom-note">
+            Хайртай шүү, ээж ээ
+        </p>
+
+    </section>
+
+
+    <!-- Main surprise -->
+    <main id="surprise" class="hidden">
+
+        <section class="birthday">
+
+            <p class="small-title">HAPPY BIRTHDAY</p>
+
+            <h2>Төрсөн өдрийн мэнд хүргэе!</h2>
+
+            <p>
+                Миний хамгийн хайртай, хамгийн нандин
+                хүндээ энэ өдрийн мэндийг хүргэе.
+            </p>
+
+            <div class="cake">🎂</div>
+
+            <button class="main-btn" onclick="celebrate()">
+                Баярын лаагаа үлээгээрэй ✨
+            </button>
+
+        </section>
+
+
+        <!-- Photo gallery -->
+        <section class="memories">
+
+            <p class="small-title">OUR MEMORIES</p>
+
+            <h2>Бидний нандин дурсамжууд</h2>
+
+            <p class="description">
+                Миний амьдралын хамгийн сайхан мөчүүд
+                таны минь дэргэд өнгөрсөн.
+            </p>
+
+            <div class="gallery">
+
+                <img src="images/mom1.jpg"
+                     alt="Ээжтэйгээ авахуулсан зураг">
+
+              
+
+            </div>
+
+        </section>
+
+
+        <!-- Letter -->
+        <section class="letter-section">
+
+            <p class="small-title">A LETTER FOR YOU</p>
+
+            <h2>Ээждээ бичсэн захидал 💌</h2>
+
+            <div class="envelope" id="envelope"
+                 onclick="openLetter()">
+
+                <div class="envelope-icon">💌</div>
+
+                <p>Энд дарж захидлаа нээгээрэй</p>
+
+            </div>
+
+            <div class="letter hidden" id="letter">
+
+                <h3>Хайрт ээж минь ❤️</h3>
+
+                <p>
+                        Элсэн говийн ширхэг тоогоор
+                        Ээждээ би дэндүү хайртай 
+                        Эвлэсэн сүүг нь залгилсан болохоор
+                        Ээж минь та бурханаас ч илүү 
+
+                </p>
+
+                <p>
+                   Халуун хэвлийд тань амилсан юм болохоор 
+                   Хайрлахгүй байхын аргагүй
+                
+                </p>
+
+                <p>
+                     Таны минь инээмсэглэл үргэлж тод байж,
+                    сэтгэл тань амар амгалан,
+                    амьдрал тань аз жаргалаар дүүрэн байгаасай.
+                </p>
+
+                <h3>Тандаа хязгааргүй их хайртай. ❤️</h3>
+
+                <p class="signature">
+                    Хайртай охиноос нь
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Final section -->
+        <section class="ending">
+
+            <div class="final-flower">🌸</div>
+
+            <h2>Та бол миний хамгийн том аз жаргал.</h2>
+
+            <p>
+                Энэ хорвоогийн хамгийн сайхан ээждээ
+                төрсөн өдрийн мэнд хүргэе!
+            </p>
+
+            <h1>LOVE YOU, MOM ❤️</h1>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        Made with endless love ❤️
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

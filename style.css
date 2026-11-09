@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --pink: #e99bb5;
+    --dark-pink: #c96d91;
+    --light-pink: #fff0f4;
+    --cream: #fffaf7;
+    --text: #754957;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    background:
+        radial-gradient(circle at top left, #f9dce6, transparent 45%),
+        radial-gradient(circle at bottom right, #f6d5e1, transparent 45%),
+        var(--cream);
+}
+
+.flower {
+    font-size: 65px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.small-title {
+    color: var(--dark-pink);
+    letter-spacing: 5px;
+    font-size: 11px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(65px, 12vw, 110px);
+    color: var(--dark-pink);
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-size: 15px;
+    margin-bottom: 35px;
+    color: #956b79;
+}
+
+.main-btn {
+    background: var(--dark-pink);
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px #d98cae55;
+}
+
+.main-btn:hover {
+    background: #ad5579;
+    transform: translateY(-4px);
+}
+
+.bottom-note {
+    margin-top: 40px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.birthday {
+    text-align: center;
+    padding: 110px 20px;
+    background: #fff0f4;
+}
+
+.birthday h2,
+.memories h2,
+.letter-section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(38px, 7vw, 60px);
+    color: var(--dark-pink);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.birthday p:not(.small-title) {
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.9;
+}
+
+.cake {
+    font-size: 100px;
+    margin: 35px;
+    animation: float 3s infinite;
+}
+
+.memories {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.description {
+    margin: 20px auto 40px;
+    line-height: 1.8;
+}
+
+.gallery {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 7px solid white;
+    box-shadow: 0 5px 20px #b87c9030;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03) rotate(-1deg);
+}
+
+.letter-section {
+    background: #fff0f4;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.envelope {
+    background: white;
+    max-width: 350px;
+    margin: 40px auto;
+    padding: 35px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px #bd7e9330;
+    transition: 0.3s;
+}
+
+.envelope:hover {
+    transform: translateY(-5px);
+}
+
+.envelope-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.envelope p {
+    font-size: 13px;
+}
+
+.letter {
+    background: white;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px #bd7e9330;
+    line-height: 2;
+    animation: appear 1s ease;
+}
+
+.letter h3 {
+    color: var(--dark-pink);
+    margin-bottom: 20px;
+}
+
+.letter p {
+    margin-bottom: 20px;
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    text-align: right;
+    color: var(--dark-pink);
+}
+
+.ending {
+    text-align: center;
+    padding: 110px 20px;
+    background: var(--cream);
+}
+
+.final-flower {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+.ending h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(35px, 7vw, 55px);
+    color: var(--dark-pink);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.ending p {
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.ending h1 {
+    color: var(--dark-pink);
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    background: #fce4eb;
+}
+
+/* Floating hearts */
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.heart {
+    position: absolute;
+    bottom: -30px;
+    animation: rise 7s linear forwards;
+    opacity: 0.7;
+}
+
+@keyframes rise {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: 270px;
+    }
+
+    .letter {
+        padding: 25px;
+    }
+
+    .birthday,
+    .memories,
+    .letter-section {
+        padding: 75px 18px;
+    }
+
+}
